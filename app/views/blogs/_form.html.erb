@@ -1,0 +1,29 @@
+<header class ="home">
+  <div class = top>
+    <h1 id="titile">Blog_Rails</h1>
+    <a id="fly"><%= link_to 'ホーム', blogs_path %></a>   
+  </div>
+</header>
+
+<%= form_with(model: @blog, local: true ,url: choose_new_or_edit ) do |form| %>    
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
+      <ul>
+        <% @blog.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="blog_content">
+      <%= form.label :content %>
+      <%= form.text_field :content %>
+    </div>
+    <%= form.submit  "ツイート" %>
+  <% end %>
+    <%= link_to "ツイート一覧画面にもどる", blogs_path %>
+  <footer class="footer">
+    <p>Copyright © 2020 株式会社Wing</p>
+  </footer>
+

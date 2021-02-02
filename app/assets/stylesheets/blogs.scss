@@ -1,0 +1,45 @@
+body{
+    color:orange;
+    background-color:gray;
+    margin: 0;
+    }
+header{
+    background-color:#dcdcdc;
+    width: 100%;
+    margin-top: 0;
+    padding-top:0.3rem;
+    padding-left:1rem;
+    padding-bottom: 2rem;
+}
+
+.top {
+   margin-top: 0;
+   width: 110px;
+   margin: 0;
+   font-size:1rem;
+   
+}
+#titile{
+    float: left;
+}
+
+#fly{
+    float: right;
+}
+
+.footer{
+    background-color: #4D4D4D;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+     display: table;
+  
+  }
+  .footer p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
